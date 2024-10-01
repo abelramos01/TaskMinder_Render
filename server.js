@@ -2,6 +2,11 @@ const express = require('express');
 const server = express();
 const path = require('path');
 
+
+//Expor arquivos estáticos..
+server.use(express.static(__dirname + '/public'));
+server.use(express.json()) //Possibilidade de usar JSON
+
 // Middleware para processar JSON no corpo da requisição
 server.use(express.json());
 server.use(express.urlencoded({ extended: true })); // Para processar dados de formulários
