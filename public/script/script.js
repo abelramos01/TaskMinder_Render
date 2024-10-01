@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
             editLink.href = `editar.html?id=${id}`; // Coloca o link para a página de edição com o ID da atividade
 
             let img1 = document.createElement('img'); // Cria um elemento de imagem para o ícone de edição
-            img1.src = "../../imagens/edit.png";  // Coloca a fonte da imagem de edição
+            img1.src = "imagens/edit.png";  // Coloca a fonte da imagem de edição
             img1.alt = "Editar"; // Coloca o texto da imagem
             img1.title = "Editar"; // Coloca o título da imagem 
             img1.className = "all_link"; // Coloca a classe CSS da imagem
@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
             let deleteLink = document.createElement('a'); // Cria um elemento de link para exclusão
 
             let img2 = document.createElement('img'); // Cria um elemento de imagem para o ícone de exclusão
-            img2.src = "../../imagens/exclui.png"; // Coloca a fonte da imagem de exclusão
+            img2.src = "imagens/exclui.png"; // Coloca a fonte da imagem de exclusão
             img2.alt = "Apagar"; // Coloca o texto da imagem
             img2.title = "Apagar"; // Coloca o título da imagem 
             img2.className = "all_link"; // Coloca a classe CSS da imagem
