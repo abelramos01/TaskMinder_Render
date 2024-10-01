@@ -11,7 +11,7 @@ server.use(express.static(path.join(__dirname, 'public')));
 
 // Rota para enviar a página index.html
 server.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/views/index.html'));
+    res.sendFile(path.join(__dirname, 'views/index.html'));
 });
 
 // Rota POST para o cadastro de atividades
