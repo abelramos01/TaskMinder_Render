@@ -7,6 +7,15 @@ const path = require('path');
 server.use(express.static(__dirname + '/public'));
 server.use(express.json()) //Possibilidade de usar JSON
 
+server.use(express.static(__dirname + '/views'));
+server.use(express.json()) //Possibilidade de u
+
+server.use(express.static(__dirname + '/imagens'));
+server.use(express.json()) //Possibilidade de u
+
+server.use(express.static(__dirname + '/fundo'));
+server.use(express.json()) //Possibilidade de u
+
 // Middleware para processar JSON no corpo da requisição
 server.use(express.json());
 server.use(express.urlencoded({ extended: true })); // Para processar dados de formulários
