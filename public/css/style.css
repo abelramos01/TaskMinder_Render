@@ -10,7 +10,7 @@ body {
     background-size: 100%;
     opacity: 0;
     transition: opacity 0.7s ease-in-out;
-    background-image: url('fundo/fundo.jpg');
+    background-image: url('../fundo/fundo.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -257,7 +257,7 @@ button:hover {
     border-radius: 25px;
     border: solid #ff6932 3px;
     box-sizing: border-box; 
-    background-image: url('imagens/lupa.png');
+    background-image: url('../imagens/lupa.png');
     background-position: right 10px center; 
     background-repeat: no-repeat; 
     background-size: 40px 40px; 

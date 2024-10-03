@@ -7,8 +7,12 @@ server.use(express.static(path.join(__dirname, 'public')));
 
 server.use(express.static(path.join(__dirname, 'views')));
 
+<<<<<<< HEAD
 
 
+=======
+// Middleware para processar JSON no corpo da requisição
+>>>>>>> cb393364a6a79077d4af4ea3906e336b478fc0f3
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 
