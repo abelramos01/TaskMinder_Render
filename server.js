@@ -8,11 +8,6 @@ server.use(express.static(path.join(__dirname, 'public')));
 // Expor a pasta views para servir as páginas HTML
 server.use(express.static(path.join(__dirname, 'views')));
 
-server.use(express.static(path.join(__dirname, 'fundo')));
-
-// Expor a pasta imagens (separada de public)
-server.use(express.static(path.join(__dirname, 'imagens')));
-
 // Middleware para processar JSON no corpo da requisição
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
