@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
             editLink.href = `editar.html?id=${id}`;
 
             let img1 = document.createElement('img');
-            img1.src = "../imagens/edit.png";
+            img1.src = "imagens/edit.png";
             img1.alt = "Editar";
             img1.title = "Editar";
             img1.className = "all_link";
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {//executa o codigo ap
             let deleteLink = document.createElement('a');
 
             let img2 = document.createElement('img');
-            img2.src = "../imagens/exclui.png";
+            img2.src = "imagens/exclui.png";
             img2.alt = "Apagar";
             img2.title = "Apagar";
             img2.className = "all_link";
