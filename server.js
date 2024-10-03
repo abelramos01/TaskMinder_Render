@@ -7,12 +7,6 @@ server.use(express.static(path.join(__dirname, 'public')));
 
 server.use(express.static(path.join(__dirname, 'views')));
 
-<<<<<<< HEAD
-
-
-=======
-// Middleware para processar JSON no corpo da requisição
->>>>>>> cb393364a6a79077d4af4ea3906e336b478fc0f3
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 
@@ -30,6 +24,11 @@ server.get('/cadastro', (req, res) => {
 server.get('/editar', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/editar.html'));
 });
+
+server.use(function (req, res, next) {
+    console.log('aqui');
+    return res.sendFile(path.join(__dirname, 'views/404.html'))
+})
 
 server.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');
